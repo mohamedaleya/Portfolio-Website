@@ -1,5 +1,5 @@
 # Portfolio-Website
-Mean Stack portfolio website for a university project.
+Mean Stack portfolio website for a university project. Still in progress.
 
 
 Use 'npm install' to install dependencies.
