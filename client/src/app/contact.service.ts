@@ -31,7 +31,7 @@ export class ContactService {
   }
 
   // Delete contact method
-  deleteContact(id: string) {
+  deleteContact(id: string): Observable<any>  {
     return this.http.delete('http://localhost:3000/api/contact/' + id)
       .map(res => res);
   }
