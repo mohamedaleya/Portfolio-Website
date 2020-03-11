@@ -10,4 +10,4 @@ Use 'npm start' to start the client-side code. (!) Must be used in the "client" 
 Use 'nodemon' to start the server-side code.
 
 ## Logs:
-v1.0.0: Contact List app that implements CRUD operations. // 3/11/2020
+v1.0.0: Contact List app that implements CRUD operations. => on 3/11/2020
