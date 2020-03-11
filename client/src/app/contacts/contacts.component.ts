@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ContactService } from '../contact.service';
 import { Contact } from '../contact';
+import { Routes, NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacts',
@@ -14,8 +15,9 @@ export class ContactsComponent implements OnInit {
   first_name: string;
   last_name: string;
   phone: string;
+  router: any;
 
-  constructor(private contactService: ContactService) {}
+  constructor(private contactService: ContactService, router: Router) {  }
 
   addContact() {
     const newContact = {
@@ -23,12 +25,10 @@ export class ContactsComponent implements OnInit {
       last_name: this.last_name,
       phone: this.phone
     };
-    this.contactService.addContact(newContact)
-    .subscribe(contact => {
+    this.contactService.addContact(newContact).subscribe(contact => {
       this.contacts.push(newContact);
     });
   }
-
 
   getContacts(): void {
     this.contactService.getContacts().subscribe(contacts => {
@@ -37,16 +37,21 @@ export class ContactsComponent implements OnInit {
     });
   }
 
-  deleteContact(id){
-    console.log('deleting '+ id);
+  deleteContact(id) {
+    console.log('deleting ' + id);
     this.contactService.deleteContact(id).subscribe(
-      (msg) => console.log(msg),
-      (error) => console.log(error)
+      msg => console.log(msg),
+      error => console.log(error)
+
+
     );
   }
 
 
+
   ngOnInit() {
     this.getContacts();
+
+
   }
 }
