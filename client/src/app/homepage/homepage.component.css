@@ -59,7 +59,18 @@
     font-family: Muli, sans-serif;
     color: rgb(255,255,255);
     padding-right: 125px;
+    margin-right: 16px;
     text-align: center;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 300px) {
+  .description {
+    font-family: Muli, sans-serif;
+    color: rgb(255,255,255);
+    padding-right: 125px;
+    text-align: left;
   }
 }
 
@@ -67,19 +78,23 @@
   .description {
     font-family: Muli, sans-serif;
     color: rgb(255,255,255);
-    /*text-align: center;*/
     padding: 0;
     padding-top: 5px;
+    padding-right: 342px;
     margin-left: 16px;
+    text-align: left;
   }
 }
 
-.description {
-  font-family: Muli, sans-serif;
-  color: rgb(255,255,255);
-  /*text-align: center;*/
-  padding: 0;
-  padding-top: 5px;
+@media (min-width: 1200px) {
+  .description {
+    font-family: Muli, sans-serif;
+    color: rgb(255,255,255);
+    /*text-align: center;*/
+    padding: 0;
+    padding-top: 5px;
+    padding-right: 409px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -128,3 +143,30 @@
   text-decoration: none !important;
 }
 
+.email {
+  color: rgb(255,255,255);
+  font-family: Muli, sans-serif;
+  margin-left: 88px;
+}
+
+.email.info {
+  padding-left: 29px;
+}
+
+.col.column {
+  margin-left: -200px;
+}
+
+.col-icon {
+  color: rgb(255,255,255);
+  font-size: 37px;
+  margin-top: 10px;
+  margin-left: 19px;
+}
+
+.info-next-to-col {
+  color: white;
+  font-size: 19px;
+  font-family: Muli, sans-serif;
+  margin-top: 13px;
+}
