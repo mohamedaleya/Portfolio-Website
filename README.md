@@ -5,6 +5,10 @@ Mean Stack portfolio website for a university course-project.
 
 Use 'npm install' to install dependencies.
 
-Use 'npm start' to start the client-side code. (!) Must be used in the "client" folder (!)
+## Backend:
+Run 'nodemon' to start the server-side code.
 
-Use 'nodemon' to start the server-side code.
+
+## Frontend: 
+Go to client folder (cd client) and run 'npm start' to start the client-side code.
+
