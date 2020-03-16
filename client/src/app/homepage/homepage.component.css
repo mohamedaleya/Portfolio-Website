@@ -26,7 +26,7 @@
 }
 
 .main-para {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-family: Muli, sans-serif;
   font-size: 25px;
   font-weight: 800;
@@ -38,9 +38,9 @@
 
 @media (min-width: 550px) {
   .main-para {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-family: Muli, sans-serif;
-    font-weight: 800!important;
+    font-weight: 800 !important;
     line-height: 37px;
     letter-spacing: -1px;
     padding-right: 54px;
@@ -57,7 +57,7 @@
 @media (max-width: 575px) {
   .description {
     font-family: Muli, sans-serif;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding-right: 125px;
     margin-right: 16px;
     text-align: center;
@@ -68,7 +68,7 @@
 @media (min-width: 300px) {
   .description {
     font-family: Muli, sans-serif;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding-right: 125px;
     text-align: left;
   }
@@ -77,7 +77,7 @@
 @media (min-width: 768px) {
   .description {
     font-family: Muli, sans-serif;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     padding: 0;
     padding-top: 5px;
     padding-right: 342px;
@@ -89,7 +89,7 @@
 @media (min-width: 1200px) {
   .description {
     font-family: Muli, sans-serif;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     /*text-align: center;*/
     padding: 0;
     padding-top: 5px;
@@ -99,9 +99,9 @@
 
 @media (min-width: 992px) {
   .main-para {
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-family: Muli, sans-serif;
-    font-weight: 800!important;
+    font-weight: 800 !important;
     font-size: 42px;
     line-height: 53px;
     letter-spacing: -1px;
@@ -136,15 +136,13 @@
 }
 
 .learn-more {
-  color: white!important;
-  margin-left: 0;
-  padding-top: 0px;
+  color: white !important;
   font-size: 22px;
   text-decoration: none !important;
 }
 
 .email {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-family: Muli, sans-serif;
   margin-left: 88px;
 }
@@ -158,10 +156,8 @@
 }
 
 .col-icon {
-  color: rgb(255,255,255);
-  font-size: 37px;
-  margin-top: 10px;
-  margin-left: 19px;
+
+  padding-top: 15px;
 }
 
 .info-next-to-col {
@@ -169,4 +165,20 @@
   font-size: 19px;
   font-family: Muli, sans-serif;
   margin-top: 13px;
+}
+
+div p.animated {
+  animation-duration: 2s;
+}
+
+div div.animated {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+div a.animated {
+  animation-duration: infinite;
+}
+.material-icons.md-48 {
+  font-size: 48px;
 }
