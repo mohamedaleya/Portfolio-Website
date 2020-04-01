@@ -22,14 +22,14 @@
 .logo {
   margin-top: 40px;
   margin-left: 16px;
-  width: 70px;
+  width: 80px;
 }
 
 .main-para {
   color: rgb(255,255,255);
   font-family: Muli, sans-serif;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 29px;
   letter-spacing: -1px;
   padding-top: 50%;
@@ -40,7 +40,7 @@
   .main-para {
     color: rgb(255,255,255);
     font-family: Muli, sans-serif;
-    font-weight: 800!important;
+    font-weight: 600!important;
     line-height: 37px;
     letter-spacing: -1px;
     padding-right: 54px;
@@ -101,7 +101,7 @@
   .main-para {
     color: rgb(255,255,255);
     font-family: Muli, sans-serif;
-    font-weight: 800!important;
+    font-weight: 600!important;
     font-size: 42px;
     line-height: 53px;
     letter-spacing: -1px;

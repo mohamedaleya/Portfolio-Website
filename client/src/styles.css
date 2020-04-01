@@ -2,13 +2,5 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import '~animate.css/animate.min';
 
-@font-face {
-  font-family: 'Muli';
-  src: url('https://fonts.googleapis.com/css?family=Muli') format("truetype");
-  font-weight:300;
-}
 
-body{
-  font-family: 'Muli', sans-serif;
- }
 
