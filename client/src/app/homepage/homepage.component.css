@@ -19,17 +19,18 @@
   animation: change 10s ease-in-out infinite;
 }
 
-.logo {
+
+ .logo {
   margin-top: 40px;
   margin-left: 16px;
-  width: 70px;
+  width: 80px;
 }
 
 .main-para {
   color: rgb(255, 255, 255);
   font-family: Muli, sans-serif;
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 29px;
   letter-spacing: -1px;
   padding-top: 50%;
@@ -40,7 +41,7 @@
   .main-para {
     color: rgb(255, 255, 255);
     font-family: Muli, sans-serif;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     line-height: 37px;
     letter-spacing: -1px;
     padding-right: 54px;
@@ -90,7 +91,6 @@
   .description {
     font-family: Muli, sans-serif;
     color: rgb(255, 255, 255);
-    /*text-align: center;*/
     padding: 0;
     padding-top: 5px;
     padding-right: 409px;
@@ -101,7 +101,7 @@
   .main-para {
     color: rgb(255, 255, 255);
     font-family: Muli, sans-serif;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     font-size: 42px;
     line-height: 53px;
     letter-spacing: -1px;
@@ -182,3 +182,33 @@ div a.animated {
 .material-icons.md-48 {
   font-size: 48px;
 }
+
+.macbook-text-left {
+    float: left;
+}
+
+.macbook-img {
+    float: right;
+}
+
+
+
+/* Mobile First Code
+
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo {
+  margin-top: 40px;
+  margin-left: 16px;
+  width: 80px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 30px;
+}*/

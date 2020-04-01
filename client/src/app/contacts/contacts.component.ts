@@ -16,6 +16,7 @@ export class ContactsComponent implements OnInit {
   last_name: string;
   phone: string;
   router: any;
+  data: any=[];
 
   constructor(private contactService: ContactService, router: Router) {  }
 
@@ -43,7 +44,6 @@ export class ContactsComponent implements OnInit {
       msg => console.log(msg),
       error => console.log(error)
 
-
     );
   }
 
@@ -51,7 +51,6 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit() {
     this.getContacts();
-
 
   }
 }
