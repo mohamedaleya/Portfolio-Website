@@ -136,7 +136,7 @@
 
 .learn-more {
   color: white !important;
-  font-size: 22px;
+  font-size: 25px;
   text-decoration: none !important;
 }
 
@@ -190,27 +190,6 @@ div a.animated {
     float: right;
 }
 
-
-
-/* Mobile First Code
-
-.navbar-light .navbar-brand {
-  color: #fff;
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.logo {
-  margin-top: 40px;
-  margin-left: 16px;
-  width: 80px;
-}
-
-.navbar-nav .nav-link {
-  color: #fff;
-  margin-left: 30px;
-}*/
 
 .workButton {
   background-color: #536976;;
