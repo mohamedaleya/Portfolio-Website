@@ -1,35 +1,53 @@
-<div class="container">
-  <h2 class="page-header">Add contact</h2>
+<div class="animatedbg text" style="height: 1500px;">
+  <nav class="navbar navbar-dark navbar-expand-md text-white mt-auto">
+    <div class="container"><a class="navbar-brand" routerLink='/home'><img src="../assets/img/am_logo.png"
+          class="logo"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"
+        style="margin-top: 37px;margin-right: 6px;"><span class="sr-only">Toggle navigation</span><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse text-center" id="navcol-1">
+        <ul class="nav navbar-nav text-white ml-auto navtop">
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="padding-right: 30px;">Work</a>
+          </li>
+          <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/contacts" style="padding-right: 30px;">Customer Feedback</a>
+          </li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="padding-right: 30px;">About</a>
+          </li>
+          <li class="nav-item" role="presentation"><a class="nav-link" routerLink='/contact'
+              style="padding-right: 30px;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <div class="container">
+  <h2 class="page-header">Feedback Form</h2>
+  <br>
     <form (submit)= "addContact()">
       <div class="form-group">
-        <label>First Name: </label>
-        <input type="text" [(ngModel)] = "first_name" name="first_name" class="form-control">
+        <label>Name: </label>
+        <input type="text" [(ngModel)] = "first_name" name="first_name" class="form-control" required>
       </div>
       <div class="form-group">
-        <label>Last Name: </label>
-        <input type="text" [(ngModel)] = "last_name" name="last_name" class="form-control">
+        <label>Email: </label>
+        <input type="text" [(ngModel)] = "last_name" name="last_name" class="form-control" required>
       </div>
       <div class="form-group">
-        <label>Phone: </label>
+        <label>Feedback Text: </label>
         <input type="text" [(ngModel)] = "phone" name="phone" class="form-control" required>
       </div>
-      <input type="submit" class="btn btn btn-success" value="Add">
+      <input type="submit" class="btn btn btn-success" value="Submit Feedback">
     </form>
+    <br>
 <hr>
+
   <div class="container">
   <div *ngFor = "let contact of contacts" class="row">
-    <div class="col-md-3">
-      {{contact.first_name}}
-    </div>
-    <div class="col-md-3">
-      {{contact.last_name}}
-    </div>
-    <div class="col-md-3">
-      {{contact.phone}}
-    </div>
-    <div class="col-md-3">
+      {{contact.first_name}} ({{contact.last_name}}) says: {{contact.phone}}
       <input type="button" (click) = "deleteContact(contact._id)" value="Delete" class="btn btn-danger">
-      <br><br>
+      <hr>
     </div>
+
   </div>
+</div>
 </div>
