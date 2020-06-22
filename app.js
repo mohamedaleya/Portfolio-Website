@@ -11,7 +11,7 @@ var app = express();
 const route = require('./routes/route');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/feedbacklist', {
+mongoose.connect('mongodb+srv://aleyadb:E2k0yieLOnADxSpU@portfoliocluster-4a1eb.mongodb.net/aleyadb?retryWrites=true&w=majority', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
