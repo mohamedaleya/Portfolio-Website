@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-var ContactSchema = new Schema({
-    first_name:{
+var FeedbackSchema = new Schema({
+    name:{
         type: String,
         required: true
     },
-    last_name:{
+    email:{
         type: String,
         required: true
     },
-    phone:{
+    input:{
         type: String,
         required: true
     }
 });
 
-const Contact = module.exports = mongoose.model('Contact', ContactSchema);
+const Feedback = module.exports = mongoose.model('Feedback', FeedbackSchema);

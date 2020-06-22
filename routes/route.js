@@ -1,35 +1,35 @@
 const express = require('express');
 const router = express.Router();
 
-const Contact = require('../models/contacts');
+const Feedback = require('../models/feedback');
 
-// Retrieving contacts
-router.get('/contacts', (req, res, next) => {
-  Contact.find(function(err, contacts) {
-    res.json(contacts);
+// Retrieving feedbacks
+router.get('/feedbacks', (req, res, next) => {
+  Feedback.find(function(err, feedbacks) {
+    res.json(feedbacks);
   })
 });
 
-// Add contact
-router.post('/contact', (req, res, next) => {
-  let newContact = new Contact({
-    first_name: req.body.first_name,
-    last_name: req.body.last_name,
-    phone: req.body.phone
+// Add feedback
+router.post('/feedback', (req, res, next) => {
+  let newFeedback = new Feedback({
+    name: req.body.name,
+    email: req.body.email,
+    input: req.body.input
   });
 
-  newContact.save((err, contact) => {
+  newFeedback.save((err, feedback) => {
     if (err) {
-      res.json({ msg: 'Failed to add contact' });
+      res.json({ msg: 'Failed to add feedback' });
     } else {
-      res.json({ msg: 'Contact added successfully!' });;
+      res.json({ msg: 'Feedback added successfully!' });;
     }
   });
 });
 
-// Delete contact
-router.delete('/contact/:id', (req, res, next) => {
-  Contact.remove({ _id: req.params.id }, function(err, result) {
+// Delete feedback
+router.delete('/feedback/:id', (req, res, next) => {
+  Feedback.remove({ _id: req.params.id }, function(err, result) {
     if (err) {
       res.json(err);
     } else {

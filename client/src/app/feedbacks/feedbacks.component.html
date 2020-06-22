@@ -8,12 +8,12 @@
         <ul class="nav navbar-nav text-white ml-auto navtop">
           <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="padding-right: 30px;">Work</a>
           </li>
-          <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/contacts" style="padding-right: 30px;">Customer Feedback</a>
+          <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/feedbacks" style="padding-right: 30px;">Customer Feedback</a>
           </li>
           <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="padding-right: 30px;">About</a>
           </li>
-          <li class="nav-item" role="presentation"><a class="nav-link" routerLink='/contact'
-              style="padding-right: 30px;">Contact</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" routerLink='/feedback'
+              style="padding-right: 30px;">Feedback</a></li>
         </ul>
       </div>
     </div>
@@ -23,18 +23,18 @@
   <div class="container">
   <h2 class="page-header">Feedback Form</h2>
   <br>
-    <form (submit)= "addContact()">
+    <form (submit)= "addFeedback()">
       <div class="form-group">
         <label>Name: </label>
-        <input type="text" [(ngModel)] = "first_name" name="first_name" class="form-control" required>
+        <input type="text" [(ngModel)] = "name" name="name" class="form-control" required>
       </div>
       <div class="form-group">
         <label>Email: </label>
-        <input type="text" [(ngModel)] = "last_name" name="last_name" class="form-control" required>
+        <input type="text" [(ngModel)] = "email" name="email" class="form-control" required>
       </div>
       <div class="form-group">
         <label>Feedback Text: </label>
-        <input type="text" [(ngModel)] = "phone" name="phone" class="form-control" required>
+        <input type="text" [(ngModel)] = "input" name="input" class="form-control" required>
       </div>
       <input type="submit" class="btn btn btn-success" value="Submit Feedback">
     </form>
@@ -42,9 +42,9 @@
 <hr>
 
   <div class="container">
-  <div *ngFor = "let contact of contacts" class="row">
-      {{contact.first_name}} ({{contact.last_name}}) says: {{contact.phone}}
-      <input type="button" (click) = "deleteContact(contact._id)" value="Delete" class="btn btn-danger">
+  <div *ngFor = "let feedback of feedbacks" class="row">
+      {{feedback.name}} ({{feedback.email}}) says: {{feedback.input}}
+      <input type="button" (click) = "deleteFeedback(feedback._id)" value="Delete" class="btn btn-danger">
       <hr>
     </div>
 

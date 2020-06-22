@@ -11,7 +11,7 @@ var app = express();
 const route = require('./routes/route');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/contactlist', {
+mongoose.connect('mongodb://localhost:27017/feedbacklist', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
