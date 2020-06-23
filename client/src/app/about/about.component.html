@@ -1,4 +1,4 @@
-<div class="animatedbg text" style="height: 1500px;">
+<section class="animatedbg" style="height: 270vh;">
   <nav class="navbar navbar-dark navbar-expand-md text-white mt-auto">
     <div class="container"><a class="navbar-brand" routerLink='/home'><img src="../assets/img/am_logo.png"
           class="logo"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"
@@ -18,36 +18,7 @@
       </div>
     </div>
   </nav>
-  <br>
-  <br>
-  <div class="container">
-  <h2 class="page-header">Feedback Form</h2>
-  <br>
-    <form (submit)= "addFeedback()">
-      <div class="form-group">
-        <label>Name: </label>
-        <input type="text" [(ngModel)] = "name" name="name" class="form-control" placeholder="Firstname Lastname" required>
-      </div>
-      <div class="form-group">
-        <label>Email: </label>
-        <input type="text" [(ngModel)] = "email" name="email" class="form-control" placeholder="example@email.com" required>
-      </div>
-      <div class="form-group">
-        <label>Feedback Text: </label>
-        <input type="text" [(ngModel)] = "input" name="input" class="form-control" placeholder="Type your feedback" required>
-      </div>
-      <input type="submit" class="btn btn btn-success" value="Submit Feedback">
-    </form>
-    <br>
-<hr>
 
-  <div class="container">
-  <div *ngFor = "let feedback of feedbacks" class="row">
-      {{feedback.name}} ({{feedback.email}}) says: {{feedback.input}}
-      <input type="button" (click) = "deleteFeedback(feedback._id)" value="Delete" class="btn btn-danger" style="margin-left: 10px; height: 30px;">
-      <hr>
-    </div>
+<div class="aligncenter"><img src="../assets/img/cv.png" class="cv"></div>
 
-  </div>
-</div>
-</div>
+</section>

@@ -29,7 +29,7 @@ router.post('/feedback', (req, res, next) => {
 
 // Delete feedback
 router.delete('/feedback/:id', (req, res, next) => {
-  Feedback.remove({ _id: req.params.id }, function(err, result) {
+  Feedback.deleteMany({ _id: req.params.id }, function(err, result) {
     if (err) {
       res.json(err);
     } else {

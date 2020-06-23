@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { FeedbacksComponent } from './feedbacks/feedbacks.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: 'feedbacks', component: FeedbacksComponent },
   { path: 'contact', component: ContactComponent, data: { title: 'contact' } },
   { path: 'home', component: HomepageComponent },
+  { path: 'about', component: AboutComponent },
   {
     path: '',
     redirectTo: '/home',
@@ -22,4 +24,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [FeedbacksComponent, ContactComponent, HomepageComponent]
+export const routingComponents = [FeedbacksComponent, ContactComponent, AboutComponent, HomepageComponent]

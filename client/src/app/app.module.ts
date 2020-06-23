@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
-import { WorkComponent } from './work/work.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    WorkComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
